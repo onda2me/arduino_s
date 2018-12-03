@@ -27,7 +27,6 @@ void loop() {
   Serial.print("t ::: ");
   Serial.println(t);
 
-
   delay(1000);
 
 }
