@@ -1,5 +1,5 @@
 #include <Wire.h>  // Wire 헤더파일 호출
-#include <LiquidCrystal_I2C.h>  // LiquidCrystal_I2C 헤다파일 호출
+#include <LiquidCrystal_I2C.h>  // LiquidCrystal_I2C 헤더파일 호출
 #include <DHT.h>
 
 
