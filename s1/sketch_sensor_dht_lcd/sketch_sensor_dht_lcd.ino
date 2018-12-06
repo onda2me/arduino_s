@@ -17,7 +17,7 @@ void setup() {
   lcd.backlight();  // LCD 백라이트 함수
 
   lcd.print("Temperature .... ");  // 원하는 문구 입력
-  delay(1000);
+  delay(500);
   
   dht.begin();
   Serial.begin(9600);
@@ -33,20 +33,22 @@ void loop() {
   t = dht.readTemperature();  // 온도
 
   lcd.clear();
-  lcd.print("Hum : ");
-  lcd.println(h);
-  
-  delay(500);
-  
-  lcd.setCursor(0, 1);
-  lcd.print("Temper : ");
-  lcd.println(t);
-  
+  lcd.setCursor(0, 0);
+  lcd.print("H : ");
+  lcd.print((int)h);
+  lcd.print(" %");
+
+  lcd.setCursor(0,1);
+  lcd.print("T : ");
+  lcd.print((int)t);
+  lcd.print(" C");
+
+  /*
   Serial.print("\n\nh ::: ");
   Serial.println(h);
   Serial.print("t ::: ");
   Serial.println(t);
-
+  */
   delay(1000);
   
 }

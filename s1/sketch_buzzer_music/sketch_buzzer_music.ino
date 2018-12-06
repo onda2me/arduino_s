@@ -33,12 +33,6 @@ void loop() {
 
     for (int i = 0; i< sizeMusic; i++) {
       tone(pinBusor, nTone[nMusic[i]]);
-      Serial.print("[");
-      Serial.print(i);
-      Serial.print(" ] = ");
-      Serial.print(nMusic[i] );
-      Serial.print(" -> ");
-      Serial.println(nTone[nMusic[i]]);
       delay(300);
     }
   
