@@ -36,8 +36,7 @@ void loop() {
     rotaion();
   }
 
-  delay(1000);
-  
+  delay(500);  
 }
 
 // 초음파 센서로 거리 측정하기
@@ -49,7 +48,6 @@ void measure() {
 
   duration = pulseIn(pinEcho, HIGH);
   distance = duration / 2 / 29.1;
-
 }
 
 // 서보모터 회전하기
@@ -67,7 +65,7 @@ void rotaion() {
   servo.write(0);
   Serial.print("서보회전각2 : ");
   Serial.println(servo.read());  
-  delay(1000);
+  delay(500);
       
   servo.detach();
 }
