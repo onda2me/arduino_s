@@ -4,9 +4,11 @@ int ledGreen = 12;  // led green
 int ledYellow = 11; // led yellow
   
 void setup() {
+  
   pinMode(ledRed, OUTPUT);    // define red output
   pinMode(ledGreen, OUTPUT);  // define green output
   pinMode(ledYellow, OUTPUT); // define yellow output
+  
 }
 
 void loop() {
@@ -25,4 +27,5 @@ void loop() {
   delay(1000); // 1초 기다리기
   
   digitalWrite(ledYellow, LOW);   // yellow off
+  
 }
