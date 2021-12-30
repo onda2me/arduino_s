@@ -1,33 +1,28 @@
 
-  int ledRed = 13;
-  int ledGreen = 12;
-  int ledYellow = 11;
+  int ledRed = 13;    // led red 
+  int ledGreen = 12;  // led green
+  int ledYellow = 11; // led yellow
   
-  
-
 void setup() {
-
-
-  pinMode(ledRed, OUTPUT);
-  pinMode(ledGreen, OUTPUT);
-  pinMode(ledYellow, OUTPUT);
-  
-
+  pinMode(ledRed, OUTPUT);    // define red output
+  pinMode(ledGreen, OUTPUT);  // define green output
+  pinMode(ledYellow, OUTPUT); // define yellow output
 }
 
 void loop() {
-
-
-  digitalWrite(ledYellow, LOW);
-  digitalWrite(ledRed, HIGH); 
+  
+  digitalWrite(ledRed, HIGH);     // red on
   delay(1000); // 1초 기다리기
- 
-  digitalWrite(ledRed, LOW);
-  digitalWrite(ledGreen, HIGH);
+    
+  digitalWrite(ledRed, LOW);      // red off
+  
+  digitalWrite(ledGreen, HIGH);   // green on
   delay(1000); // 1초 기다리기
-
-  digitalWrite(ledGreen, LOW);
-  digitalWrite(ledYellow, HIGH);
+  
+  digitalWrite(ledGreen, LOW);    // green off
+  
+  digitalWrite(ledYellow, HIGH);  // yellow on 
   delay(1000); // 1초 기다리기
-
+  
+  digitalWrite(ledYellow, LOW);   // yellow off
 }
