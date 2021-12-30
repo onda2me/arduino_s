@@ -1,7 +1,7 @@
 
-  int ledRed = 13;    // led red 
-  int ledGreen = 12;  // led green
-  int ledYellow = 11; // led yellow
+int ledRed = 13;    // led red 
+int ledGreen = 12;  // led green
+int ledYellow = 11; // led yellow
   
 void setup() {
   pinMode(ledRed, OUTPUT);    // define red output
