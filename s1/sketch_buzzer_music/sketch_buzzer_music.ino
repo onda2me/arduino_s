@@ -28,6 +28,8 @@ void loop() {
     for (int i=0; i<sizeMusic; i++) {
       tone(pinBuzzer, nTone[nMusic[i]]);
       delay(300);
+      noTone(pinBuzzer);
+      delay(100);
     }  
     noTone(pinBuzzer);
  }
