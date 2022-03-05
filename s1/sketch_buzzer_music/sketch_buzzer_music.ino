@@ -10,9 +10,7 @@
  * 도 523
  */
 
-int pinButton = 8;
-int pinBusor = 9;
-int pinLed = 12;
+int pinBuzzer = 9;
 
 int nTone[] = {262, 294, 330, 349, 392, 440, 494, 523 };  
 int nMusic[] = {4, 4, 5, 5, 4, 4, 2, 2, 4, 4, 2, 2, 1, 1, 1, 4, 4, 5, 5, 4, 4, 2, 2, 4, 2, 1, 2, 0, 0, 0}; 
@@ -26,17 +24,10 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
-  if(digitalRead(pinButton)) {
-
-    pinMode(pinLed, OUTPUT);
-    digitalWrite(pinLed, HIGH);
-
-    for (int i = 0; i< sizeMusic; i++) {
-      tone(pinBusor, nTone[nMusic[i]]);
+    delay(2000);
+    for (int i=0; i<sizeMusic; i++) {
+      tone(pinBuzzer, nTone[nMusic[i]]);
       delay(300);
-    }
-  
-    noTone(pinBusor);
-    digitalWrite(pinLed, LOW);
-  }
+    }  
+    noTone(pinBuzzer);
  }
