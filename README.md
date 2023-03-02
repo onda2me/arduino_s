@@ -1,4 +1,4 @@
-# 💬 arduino project examples
+# 💬 arduino examples project
  
 - 서보모터
 - 초음파 센서
